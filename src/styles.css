@@ -1,1 +1,340 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    height: 100%;
+    background-image: url('Images/ui_screen_Background-Image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.main-container {
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    padding-bottom: 60px;
+}
+
+.uppder-black-header {
+    height: 1.15vh;
+    background-color: black;
+}
+
+
+.uppder-header {
+    padding: 2px;
+    background: #1e5799; /* Old browsers */
+    background: -moz-linear-gradient(top, #F8F8F8 0%, #F8F8F8 50%, #F0F0F0 51%, #F0F0F0 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #F8F8F8 0%, #F8F8F8 50%, #F0F0F0 51%, #F0F0F0 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #F8F8F8 0%, #F8F8F8 50%, #F0F0F0 51%, #F0F0F0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+.uppder-header_small {
+    background: #1e5799; /* Old browsers */
+    background: -moz-linear-gradient(top, #F8F8F8 0%, #F8F8F8 50%, #F0F0F0 51%, #F0F0F0 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #F8F8F8 0%, #F8F8F8 50%, #F0F0F0 51%, #F0F0F0 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #F8F8F8 0%, #F8F8F8 50%, #F0F0F0 51%, #F0F0F0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+h6 {
+    color: cornflowerblue;
+}
+
+/*.btn-outline-secondary {
+    color: green !important;
+    background-color: none;
+}*/
+
+/*.btn-outline-secondary, .btn:hover {
+    color: green !important;
+    background-color: none !important;
+}*/
+
+.navigation_gradient {
+    background: #115A3C; /* Old browsers */
+    background: -moz-linear-gradient(top, #159865 0%, #115A3C 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #159865 0%, #115A3C 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #159865 0%, #115A3C 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#159865', endColorstr='#115A3C',GradientType=0 ); /* IE6-9 */
+}
+
+    .navigation_gradient:hover {
+        background: #72BB47; /* Old browsers */
+    }
+
+.active {
+    color: #EFEF9D !important;
+    background: #115A3C; /* Old browsers */
+    background: -moz-linear-gradient(top, #115A3C 0%, #159865 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #115A3C 0%, #159865 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #115A3C 0%, #159865 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#115A3C', endColorstr='#159865',GradientType=0 ); /* IE6-9 */
+}
+
+.font-size {
+    font-size: 12px;
+}
+
+.font-size_icon {
+    color: #B8D883;
+    font-size: 22px;
+}
+
+.middle_content {
+    height: auto;
+}
+
+.bg-white-color {
+    background-color: rgba(255,255,255,0.7)
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    padding: 15px;
+    height: auto;
+    background-color: black;
+}
+
+.btncreate {
+    background-color: #116542;
+}
+
+.table-icons-color {
+    color: orange;
+    font-size: 16px;
+}
+
+table tr td:nth-child(1) {
+    color: #115a3c;
+    font-weight: 500;
+}
+
+
+
+.page-link {
+    line-height: 0.75;
+    color: white;
+    background-color: #116542;
+    border: 1px solid #116542;
+}
+
+
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #B8D883;
+    border-color: #116542;
+}
+
+.bg-warningg {
+    height: 40px;
+    background-color: #EA6D11 !important;
+}
+
+    .bg-warningg:after {
+        background-image: url('Images/afterimage.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 190px;
+        width: 40px;
+        height: 40px;
+        margin-top: -8px;
+        content: "";
+    }
+
+    .bg-warningg:before {
+        background-image: url('Images/beofer.png');
+        background-repeat: repeat;
+        background-size: cover;
+        position: absolute;
+        left: -10px;
+        width: 10px;
+        height: 52px;
+        margin-top: -8px;
+        content: "";
+    }
+
+.bg-warningg-equ {
+    height: 40px;
+    background-color: #EA6D11 !important;
+}
+
+    .bg-warningg-equ:after {
+        background-image: url('Images/afterimage.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 170px;
+        width: 40px;
+        height: 40px;
+        margin-top: -8px;
+        content: "";
+    }
+
+    .bg-warningg-equ:before {
+        background-image: url('Images/beofer.png');
+        background-repeat: repeat;
+        background-size: cover;
+        position: absolute;
+        left: -10px;
+        width: 10px;
+        height: 52px;
+        margin-top: -8px;
+        content: "";
+    }
+
+.bg-warning {
+    height: 40px;
+    background-color: #EA6D11 !important;
+}
+
+    .bg-warning:after {
+        background-image: url('Images/afterimage.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 202px;
+        width: 40px;
+        height: 40px;
+        margin-top: -8px;
+        content: "";
+    }
+
+    .bg-warning:before {
+        background-image: url('Images/beofer.png');
+        background-repeat: repeat;
+        background-size: cover;
+        position: absolute;
+        left: -10px;
+        width: 10px;
+        height: 52px;
+        margin-top: -8px;
+        content: "";
+    }
+
+.arrow {
+    width: 0;
+    height: 0;
+    float: left;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    border-width: 0px 0px 39px 39px
+}
+
+input[type="text"] {
+    background-color: gainsboro;
+    border-color: #72BB47;
+}
+
+input[type="date"] {
+    background-color: gainsboro;
+    border-color: #72BB47;
+}
+
+input[type="password"] {
+    background-color: gainsboro;
+    border-color: #72BB47;
+}
+
+input[type="tel"] {
+    background-color: gainsboro;
+    border-color: #72BB47;
+}
+
+.form-control:focus {
+    border-color: #72BB47;
+    box-shadow: inset 0 1px 1px rgba(114, 187, 71, 0.075), 0 0 8px rgba(114, 187, 71, 0.6);
+}
+
+
+input[type="email"] {
+    background-color: gainsboro;
+    border-color: #72BB47;
+}
+
+select {
+    background-color: gainsboro !important;
+    border-color: #72BB47 !important;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    color: #fff;
+    border-color: #72BB47;
+    background-color: #72BB47;
+}
+
+
+
+.small {
+    color: #116542;
+    font-weight: 500;
+}
+
+
+select.round {
+    background-image: linear-gradient(45deg, transparent 50%, white 50%), linear-gradient(135deg, white 50%, transparent 50%), radial-gradient(#72BB47 70%, transparent 72%);
+    background-position: calc(100% - 15px) calc(0.85em + 2px), calc(100% - 12px) calc(0.85em + 2px), calc(100% - .5em) .5em;
+    background-size: 4px 5px, 4px 5px, 1.25em 1.25em;
+    background-repeat: no-repeat;
+
+}
+
+select {
+    background-color: white;
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em m;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+
+
+
+.inner-addon {
+    position: relative;
+}
+
+   
+    .inner-addon .fa {
+        position: absolute;
+        padding: 10px;
+        pointer-events: none;
+    }
+
+
+.left-addon .fa {
+    left: 0px;
+}
+
+.right-addon .fa {
+    right: 0px;
+}
+
+
+.left-addon input {
+    padding-left: 30px;
+}
+
+.right-addon input {
+    padding-right: 30px;
+}
+
+.form-control.ng-touched.ng-invalid{
+    border:2 px solid red
+}

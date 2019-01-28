@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+	<title>::DSNY::</title>
+	 
+</head>
+<body>
+    <div class="main-container" style="height:100vh">
+        <div class="uppder-header d-sm-none d-none d-md-block pt-3 pb-2 border-bottom border-secondary" style="height:auto;">
+            <div class="container-fluid text-center ">
+                <h5 class="small" style="color:#EA6D11;">PLEASE LOGIN</h5>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center" style="height:93vh;">
+            <div class="container">
+                <div class="col-12 text-center">
+                    <img src="assets/dsny-png.png" class="img-round" style="width:100px; height:100px;" />
+                </div>
+                <div class="col-12 text-center mt-2">
+                    <h4 class="font-weight-bold">DSNY Novas</h4>
+                </div>
+                <div class="container-fluid text-center ">
+                        <div *ngIf="error" class = "alert alert-danger" >Invalid User name or Password</div>
+               </div>
+                <div class="col-12 text-center mt-4">
+                    <form  #f="ngForm" (ngSubmit)="log(f)" class="form-signin  col-12">
+                        <div class="row col-12 mt-2 d-flex justify-content-center text-center">
+                            <div class="form-group mb-2 col-12 col-md-5 input-group-sm">
+                                <div class="inner-addon right-addon">
+                                    <i class="fa fa-envelope" style="color:#EA6D11;"></i>
+                                    <input ngModel #email="ngModel"  id="email" name ="email"  type="email"  class="form-control form-control-md rounded-0 " placeholder="Please Enter Email ID" required autofocus />
+                                    <div class = "alert alert-danger" *ngIf="email.touched && !email.valid">email is required</div>
+                                </div>
+                            </div>  
+                        </div>
+
+                        <div class="row col-12 mt-2 d-flex justify-content-center text-center">
+                            <div class="form-group mb-2 col-12 col-md-5 input-group-sm">
+                                <div class="inner-addon right-addon">
+                                    <i class="fa fa-unlock-alt" style="color:#EA6D11;"></i>
+                                    <input ngModel #pass="ngModel"  id="pass" name="pass"   type="password"  class="form-control form-control-md rounded-0" placeholder="Password"  required autocomplete/>
+                                    <div class = "alert alert-danger"  *ngIf="pass.touched && !pass.valid">password is required</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row col-12 mt-2 d-flex justify-content-center text-center">
+                            <div class="col-sm-12 col-md-2 mt-1  text-center">
+                                <button type="submit"  class="btn btn-sm btncreate text-white col-sm-12 col-md-12" [disabled]="!f.valid">Login</button>
+                            </div>
+                        </div>
+
+                        <div class="row col-12 mt-5 d-flex justify-content-center text-center">
+                            <div class="col-sm-12 col-md-12 mt-1 text-center ">
+                                <a href="#" class="bg-light text-dark pl-3 pr-3 pt-1 pb-1">
+                                    Forgotten your password?
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+<!-- javascript files -->
+	
+</body>
+</html>
