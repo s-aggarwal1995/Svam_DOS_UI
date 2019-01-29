@@ -8,6 +8,9 @@ import { EquipmentComponent } from './equipment/equipment.component';
 import { ManageDailysetupComponent } from './manage-dailysetup/manage-dailysetup.component';
 import { ManageUsersComponent } from './manage-users/manage-users.component';
 import { TicketInformationComponent } from './ticket-information/ticket-information.component';
+import { HearingTimeComponent } from './hearing-time/hearing-time.component';
+import { ManageUserComponent } from './manage-user/manage-user.component';
+import { AgencyComponent } from './agency/agency.component';
 
 const routes: Routes = [
 {path : '' , component: LoginComponentComponent},
@@ -18,7 +21,10 @@ const routes: Routes = [
 {path : 'manageusers' , component: ManageUsersComponent},
 {path : 'ticketinformation' , component: TicketInformationComponent},
 {path : 'violationsearch' , component: ViolationSearchComponent},
-{path : 'login' , component: LoginComponentComponent}
+{path : 'login' , component: LoginComponentComponent},
+{path : 'agency' , component: AgencyComponent},
+{path : 'hearingtime' , component: HearingTimeComponent},
+{path : 'manageuser' , component: ManageUserComponent}
 
 ];
 

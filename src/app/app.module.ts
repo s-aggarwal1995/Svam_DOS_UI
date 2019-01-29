@@ -17,6 +17,10 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpModule } from '@angular/http';
 import { LoginServiceService } from './services/login-service.service';
+import { ManageUserComponent } from './manage-user/manage-user.component';
+import { AgencyComponent } from './agency/agency.component';
+import { HearingTimeComponent } from './hearing-time/hearing-time.component';
+import { HttpClientModule } from '@angular/common/http'; 
 
 @NgModule({
   declarations: [
@@ -30,13 +34,17 @@ import { LoginServiceService } from './services/login-service.service';
     ManageDailysetupComponent,
     EquipmentComponent,
     BoroReportComponent,
-    AddUserComponent
+    AddUserComponent,
+    ManageUserComponent,
+    AgencyComponent,
+    HearingTimeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     CommonModule,
+    HttpClientModule,
     HttpModule
   ],
   providers: [LoginServiceService],

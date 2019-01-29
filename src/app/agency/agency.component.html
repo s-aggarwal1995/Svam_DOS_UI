@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <title>::DSNY::</title>
+</head>
+<body>
+    <div class="main-container">
+        
+
+        <div class="middle_content">
+            <div class="container  pt-2  pr-2 pl-2">
+                <div class="w-100 p-2 bg-white-color shadow p-3 mb-2">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 text-center pl-0">
+                            <div class="bg-warningg  pt-2 pb-2 pr-5 pl-5  text-white float-left"><span class="pt-0  pl-5">Agency</span></div>
+                        </div>
+                    </div>
+                    <div class="row text-center mt-1">
+                        <div class="col-sm-12 col-md-6 text-right">
+                            <button type="button" (click)="addValue()" class="btn btn-sm btncreate text-white col-sm-12 col-md-3">Add Value</button>
+                        </div>
+                        <div class="col-sm-12 col-md-6   text-left">
+                            <button type="button" [disabled] = true class="btn btn-sm btncreate text-white col-sm-12 col-md-3">Cancel</button>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-4 overflow-auto" style="max-height:50vh;">
+                        <div class="row">
+                            <div class="table-responsive">
+                                <table class="table table-sm table-hover font-size table-bordered">
+                                    <thead class="header-fixed">
+                                        <tr class="text-white" style="background-color:#72BB47;">
+                                            <th>Agency ID</th>
+                                            <th>Name</th>
+                                            <th>Description</th>
+                                            <th>Edit</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let agency of agencies">
+                                            <td>{{agency.agencyId}}</td>
+                                            <td>{{agency.agencyName}}</td>
+                                            <td>{{agency.agencyDesc}}</td>
+                                            <td>
+                                                <a href="#">
+                                                    <i class="fa fa-pencil table-icons-color" aria-hidden="true"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-2 text-center d-flex justify-content-center" style="height:30px;">
+                        <ul class="pagination h-100">
+                            <li class="page-item h-100"><a class="page-link h-100" href="#">Previous</a></li>
+                            <li class="page-item active h-100"><a class="page-link h-100" href="#">1</a></li>
+                            <li class="page-item h-100"><a class="page-link h-100" href="#">2</a></li>
+                            <li class="page-item h-100"><a class="page-link h-100" href="#">3</a></li>
+                            <li class="page-item h-100"><a class="page-link h-100" href="#">Next</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                </div>
+        </div>
+
+
+        <!--Footer-->
+        <div class="footer text-white w-100">
+            <div class="col-12 h-100 ">
+                <div class="row h-100 align-items-center d-flex">
+                    <div class="col-xs-12 col-sm-6 h-100 justify-content-center justify-content-md-start align-items-center d-flex small text-white">
+                        © New York Department of Sanitation
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 h-100 align-items-center d-flex h-100  justify-content-center justify-content-md-end small text-white">
+                        DSNY Novas System &nbsp; &nbsp;  <strong class="lead font-weight-bold">NYC</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Footer-->
+
+    </div>
+    <!-- javascript files -->
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(function () {
+            $(".datepicker").datepicker();
+        });
+    </script>
+</body>
+</html>
