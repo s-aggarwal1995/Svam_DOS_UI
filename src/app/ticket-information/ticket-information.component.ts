@@ -17,6 +17,11 @@ export class TicketInformationComponent implements OnInit {
     if(!localStorage.getItem('userName')){
       this.router.navigate(['login']);
     }
+    this.ticketInformationService.getTicketInformation('HHT001').subscribe(e=> {
+      console.log(e.json());
+      this.summaryData = e.json().summarydata;
+      console.log(this.summaryData);
+    })
   }
   log(f){
     console.log(f.value.deviceId);
