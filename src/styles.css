@@ -338,3 +338,31 @@ select {
 .form-control.ng-touched.ng-invalid{
     border:2 px solid red
 }
+
+.dropdown-item{
+    font-size:14px;
+    margin-bottom:4px;
+}
+
+
+.dropdown-menu {
+    padding: 0 !important;
+    background-color: #115A3C;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    margin-top: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.dropdown-item{
+    color:white !important;
+    /*margin-bottom:0px;*/
+    
+}
+
+    .dropdown-item:hover {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        background: #72BB47; /* Old browsers */
+    }

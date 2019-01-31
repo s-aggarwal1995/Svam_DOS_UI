@@ -1,4 +1,9 @@
  <!--Upper Black div-->
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
  <div class="uppder-black-header"></div>
  <!--Upper Black div-->
  <!--Mobile View Navigation-->
@@ -79,67 +84,52 @@
      </div>
  </div>
  <!--Logo Bar-->
- <!--Navigation bar-->
  <nav class="navbar navbar-expand-sm pt-0 pb-0 navbar-dark d-sm-none d-none d-md-block sticky-top justify-content-md-center text-white tab-height" style="background-color:#116542">
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-         <span class="navbar-toggler-icon"></span>
-     </button>
-     <div class="collapse navbar-collapse justify-content-md-center text-white" id="collapsibleNavbar">
-         <ul class="navbar-nav">
-             <li class="nav-item border-right border-dark">
-                 <a class="nav-link text-white  navigation_gradient pr-4 pl-4 " routerLink="/" routerLinkActive="active">
-                     <i class="fa fa-home" aria-hidden="true" style="color:#B8D883; font-size:20PX"></i>&nbsp; <span class="small text-white ">Home</span>
-                 </a>
-             </li>
-             <li class="nav-item  border-right border-dark">
-                 <a class="nav-link  text-white navigation_gradient pr-4 pl-4" routerLink="/adduser" routerLinkActive="active">
-                     <i class="fa fa-user-circle-o" aria-hidden="true" style="color:#B8D883; font-size:20PX"></i>&nbsp;  <span class="small text-white">Manage User</span>
-                 </a>
-             </li>
-             <li class="nav-item border-right border-dark">
-                 <a class="nav-link  navigation_gradient  pr-4 pl-4 text-white" routerLink="violationsearch" routerLinkActive="active">
-                     <i class="fa fa-search" aria-hidden="true" style="color:#B8D883;"></i>&nbsp;  <span class="small text-white">Search</span>
-                 </a>
-
-             </li>
-             <li class="nav-item">
-                 <a class="nav-link text-white  navigation_gradient  pr-4 pl-4" routerLink="managedailysetup" routerLinkActive="active">
-                     <i class="fas fa-tools" style="color:#B8D883;"></i>
-                     &nbsp;  <span class="small text-white">Daily Setup</span>
-                 </a>
-             </li>
-             <li class="nav-item">
-                    <a class="nav-link text-white  navigation_gradient  pr-4 pl-4" routerLink="bororeport" routerLinkActive="active">
-                        <i class="fas fa-tools" style="color:#B8D883;"></i>
-                        &nbsp;  <span class="small text-white">Boro Report</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-md-center text-white" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown border-right border-dark">
+                    <a class="nav-link text-white  navigation_gradient dropdown-toggle pr-4 pl-4 " href="" data-toggle="dropdown">
+                        <i class="fa fa-home" aria-hidden="true" style="color:#B8D883; font-size:20PX"></i>&nbsp; <span class="small text-white ">Home</span>
                     </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" data-toggle="tab" routerLink="managedailysetup" routerLinkActive="active">ManageDailySetup</a>
+                        <a class="dropdown-item" routerLink="violationsearch" routerLinkActive="active">ViolationsSearch</a>
+                    </div>
                 </li>
-                
-                    <li class="nav-item">
-                            <a class="nav-link text-white  navigation_gradient  pr-4 pl-4" routerLink="hearingtime" routerLinkActive="active">
-                                <i class="fas fa-tools" style="color:#B8D883;"></i>
-                                &nbsp;  <span class="small text-white">Hearing Time</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                                <a class="nav-link text-white  navigation_gradient  pr-4 pl-4" routerLink="equipment" routerLinkActive="active">
-                                    <i class="fas fa-tools" style="color:#B8D883;"></i>
-                                    &nbsp;  <span class="small text-white">Equipment</span>
-                                </a>
-                            </li>
-                        <li class="nav-item">
-                                <a class="nav-link text-white  navigation_gradient  pr-4 pl-4" routerLink="agency" routerLinkActive="active">
-                                    <i class="fas fa-tools" style="color:#B8D883;"></i>
-                                    &nbsp;  <span class="small text-white">Agency</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                    <a class="nav-link text-white  navigation_gradient  pr-4 pl-4" routerLink="ticketinformation" routerLinkActive="active">
-                                        <i class="fas fa-tools" style="color:#B8D883;"></i>
-                                        &nbsp;  <span class="small text-white">Ticket Information</span>
-                                    </a>
-                                </li>
-         </ul>
-     </div>
- </nav>
- <!--Navigation bar-->
+
+                <li class="nav-item border-right border-dark">
+                    <a class="nav-link  active  pr-4 pl-4 text-white" routerLink="managedailysetup" routerLinkActive="active">
+                        <i class="fa fa-search" aria-hidden="true" style="color:#B8D883;"></i>&nbsp;  <span class="small text-white">Search</span>
+                    </a>
+
+                </li>
+                <li class="nav-item dropdown border-right border-dark">
+                    <a class="nav-link text-white navigation_gradient dropdown-toggle pr-4 pl-4 " href="#" data-toggle="dropdown">
+                        <i class="fa fa-user-circle-o" aria-hidden="true" style="color:#B8D883;"> </i>
+                        &nbsp;  <span class="small text-white">Admin</span>
+                    </a>
+                    <div class="dropdown-menu">
+                            <a class="dropdown-item" routerLink="adduser" routerLinkActive="active">Manager User</a>
+                            <a class="dropdown-item" routerLink="agency" routerLinkActive="active">Agency</a>
+                            <a class="dropdown-item" routerLink="equipment" routerLinkActive="active">Equipment</a>
+                            <a class="dropdown-item" routerLink="hearingtime" routerLinkActive="active">Hearing Time</a>
+                            <a class="dropdown-item" routerLink="ticketinformation" routerLinkActive="active">Ticket Information</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white navigation_gradient dropdown-toggle pr-4 pl-4" href="#" data-toggle="dropdown">
+                        <i class="fa fa-file-text-o" style="color:#B8D883;"></i>
+                        &nbsp;  <span class="small text-white">Reports</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" routerLink="/bororeport" routerLinkActive="active">BoroReport_AllNovs</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+   
